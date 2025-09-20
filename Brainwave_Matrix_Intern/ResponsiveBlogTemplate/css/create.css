@@ -1,0 +1,75 @@
+/* create.css */
+
+/* General Form Styling */
+.blog-form {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 25px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+/* Form Groups */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Labels */
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Input fields */
+.form-group input[type="text"],
+.form-group input[type="file"],
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+}
+
+/* Focus effect */
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #1f6feb;
+    outline: none;
+}
+
+/* Textarea specific */
+textarea {
+    resize: vertical;
+}
+
+/* Button Styling */
+.blog-form .btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #1f6feb;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.blog-form .btn:hover {
+    background-color: #155fcc;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    .blog-form {
+        padding: 15px;
+    }
+}

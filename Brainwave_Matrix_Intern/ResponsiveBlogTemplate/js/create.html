@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <title>Create a New Blog Post - iBlog</title>
+</head>
+<body>
+    <nav class="navigation max-width-1 m-auto">
+        <div class="nav-left">
+            <a href="/"><span><img src="img/logo.png" width="94px" alt="iBlog Logo"></span></a>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <form action="/search.html" method="get">
+                <input class="form-input" type="text" name="query" placeholder="Search Articles">
+                <button class="btn">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="max-width-1 m-auto"><hr></div>
+
+    <div class="max-width-1 m-auto my-2">
+        <h1>Create a New Blog Post</h1>
+        <p>Fill in the details below to publish a new article on iBlog.</p>
+
+        <form action="/submit_post.html" method="post" enctype="multipart/form-data" class="blog-form">
+            <div class="form-group">
+                <label for="title">Post Title:</label>
+                <input type="text" id="title" name="title" placeholder="Enter your blog title" required>
+            </div>
+
+            <div class="form-group">
+                <label for="author">Author Name:</label>
+                <input type="text" id="author" name="author" placeholder="Your Name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="content">Content:</label>
+                <textarea id="content" name="content" rows="10" placeholder="Write your blog content here..." required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="image">Featured Image:</label>
+                <input type="file" id="image" name="image" accept="image/*">
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn">Publish Post</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="footer">
+        <p>Copyright &copy; iBlog.com </p>
+        <a href="https://www.vecteezy.com/free-vector/typewriter">Vector Credits: Vecteezy</a>
+    </div>
+</body>
+</html>
